@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "show_notification": true,
+  "category": "misc",
+  "ingredients": [
+    "egg",
+    "diamond"
+  ],
+  "result": {
+    "id": "minecraft:villager_spawn_egg",
+    "components": {
+      "minecraft:item_name": "Spawn Banker Villager",
+      "minecraft:entity_data": {
+        "id": "minecraft:marker",
+        "Tags": [
+          "banker_spawn"
+        ]
+      }
+    }
+  }
+}

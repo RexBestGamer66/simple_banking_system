@@ -1,0 +1,7 @@
+{
+  "pack": {
+    "description": "Add a simple banking system to your world or server!",
+    "min_format": 101,
+    "max_format": 121
+  }
+}
