@@ -19,3 +19,5 @@ execute as @e[type=interaction,tag=banker_npc] at @s if data entity @s attack ru
 execute as @e[type=marker,tag=banker_spawn] at @s run summon villager ~ ~ ~ {Tags:["banker_npc"],CustomNameVisible:1b,DeathLootTable:"minecraft:empty",CustomName:{"color":"aqua","text":"Diamond Banker"},NoAI:1b,VillagerData:{level:99,profession:"minecraft:librarian"}}
 execute as @e[type=marker,tag=banker_spawn] at @s run summon interaction ~ ~ ~ {Tags:["banker_npc"],width:1f,height:2f,response:1b}
 execute as @e[type=marker,tag=banker_spawn] run kill @s
+
+execute as @a unless score @s .balance matches 0.. run scoreboard players set @s .balance 0
